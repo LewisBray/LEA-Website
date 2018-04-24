@@ -63,20 +63,19 @@
   <a href="https://www.facebook.com/einsteinsacademy">
    <img src="images/fbooklogo.png" alt="Facebook logo."></img>
   </a>
-  <span style="margin-left:10px;">'Like' us on Facebook to stay up to date with the latest news and         offers.</span><br>
-  <span style="margin-left:10px; opacity:0.3;">&copy; 2014 Little Einsteins Academy Ltd.  All rights        reserved.</span>
+  <span style="margin-left:10px;">'Like' us on Facebook to stay up to date with the latest news and offers.</span><br>
+  <span style="margin-left:10px; opacity:0.3;">&copy; 2014 Little Einsteins Academy Ltd.  All rights reserved.</span>
  </div>
 
  <script language="Javascript">
-
-  var slide = 0;
-  var images = ["images/slideimga.png", "images/slideimgb.png", "images/slideimgc.png"];
+  let slide = 0;
+  let images = ["images/slideimga.png", "images/slideimgb.png", "images/slideimgc.png"];
 
   function changeSlide(x)
   {
 	slide = (slide + x) % images.length;
-
-	if(slide < 0){slide += images.length;}
+	if (slide < 0)
+		slide += images.length;
 
 	document.getElementById("slides").src = images[slide];
   }
