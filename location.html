@@ -3,91 +3,100 @@
 <html>
 
 <head>
- <title>Little Einsteins Academy - Location</title>
- <meta charset="UTF-8">
- <meta name="description" content="Little Einstein's Gallery">
- <meta name="keywords" content="daycare, Blackwood">
- <meta name="author" content="Lewis Bray">
- <link rel="stylesheet" href="littleeinsteinsstylesheet.css">
- <link href="http://fonts.googleapis.com/css?family=Indie+Flower|Crafty+Girls|Handlee" rel="stylesheet"    type="text/css">
+  <title>Little Einsteins Academy - Location</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Little Einstein's Gallery" />
+  <meta name="keywords" content="daycare, Blackwood" />
+  <meta name="author" content="Lewis Bray" />
+  <link rel="stylesheet" href="littleeinsteinsstylesheet.css" />
+  <link href="http://fonts.googleapis.com/css?family=Indie+Flower|Crafty+Girls|Handlee"
+        rel="stylesheet" type="text/css" />
 </head>
 
 <body>
- <center>
-  <img src="images/littleeinsteinslogo.png" alt="Little Einstein's Logo"></img>
- </center>
+  <center>
+   <img src="images/littleeinsteinslogo.png" alt="Little Einstein's Logo" />
+  </center>
 
- <div style="margin-left:auto; margin-right:auto; max-width:984px">
-  
-  <a href="homepage.html">
-   <div class="btn", style="margin-left:97px;">
-    <b>Home</b>
-   </div>
-  </a>
+  <div style="margin-left:auto; margin-right:auto; max-width:984px;">
+    <a href="homepage.html">
+      <div class="btn", style="margin-left:97px;">
+        <b>Home</b>
+      </div>
+    </a>
 
-  <a href="facilities.html">
-   <div class="btn", style="margin-left:257px;">
-    <b>Facilities</b>
-   </div>
-  </a>
+    <a href="facilities.html">
+      <div class="btn", style="margin-left:257px;">
+        <b>Facilities</b>
+      </div>
+    </a>
 
-  <a href="gallery.html">
-   <div class="btn", style="margin-left:417px;">
-    <b>Gallery</b>
-   </div>
-  </a>
+    <a href="gallery.html">
+      <div class="btn", style="margin-left:417px;">
+        <b>Gallery</b>
+      </div>
+    </a>
 
-  <div class="vstdbtn", style="margin-left:577px;">
-   <b>Location</b>
+    <div class="vstdbtn", style="margin-left:577px;">
+      <b>Location</b>
+    </div>
+
+    <a href="contact.html">
+      <div class="btn", style="margin-left:737px;">
+        <b>Contact</b>
+      </div>
+    </a>
   </div>
 
-  <a href="contact.html">
-   <div class="btn", style="margin-left:737px;">
-    <b>Contact</b>
-   </div>
-  </a>
 
- </div>
+  <div id="bodystyle">
+    <br /><div class="header">Location</div>
 
- <div id="bodystyle">
-  <br><div class="header">Location</div>
+    <div id="googleMap"></div>
 
-  <div id="googleMap"></div>
+    <ul style="list-style-type:none;">
+      <li><br /></li>
+      <li>Block B,</li>
+      <li>Britannia Centre for Enterprise,</li>
+      <li>Pengam,</li>
+      <li>Blackwood,</li>
+      <li>NP12 3SP.</li>
+    </ul><br /><br />
+  </div>
 
-  <ul style="list-style-type:none;">
-   <li><br></li>
-   <li>Block B,</li>
-   <li>Britannia Centre for Enterprise,</li>
-   <li>Pengam,</li>
-   <li>Blackwood,</li>
-   <li>NP12 3SP.</li>
-  </ul><br><br>
-
- </div>
 
- <div id="foot">
-  <a href="https://www.facebook.com/einsteinsacademy">
-   <img src="images/fbooklogo.png" alt="Facebook logo."></img>
-  </a>
-  <span style="margin-left:10px;">'Like' us on Facebook to stay up to date with the latest news and         offers.</span><br>
-  <span style="margin-left:10px; opacity:0.3;">&copy; 2014 Little Einsteins Academy Ltd.  All rights        reserved.</span>
- </div>
+  <div id="foot">
+    <a href="https://www.facebook.com/einsteinsacademy">
+      <img src="images/fbooklogo.png" alt="Facebook logo." />
+    </a>
 
- <script language="Javascript">
-  
-  function showMap()
-  {
-	var location = new google.maps.LatLng(51.675491, -3.218804);
-	var canvas = document.getElementById("googleMap");
-	var properties = {center:location, zoom:18};
-	var map = new google.maps.Map(canvas, properties);
-	var marker = new google.maps.Marker({position:location});
+    <span style="margin-left:10px;">
+      'Like' us on Facebook to stay up to date with the latest news and offers.
+    </span><br />
 
-	marker.setMap(map);
-  }
- </script>
+    <span style="margin-left:10px; opacity:0.3;">
+      &copy; 2014 Little Einsteins Academy Ltd.  All rights reserved.
+    </span>
+  </div>
 
- <script src="https://maps.googleapis.com/maps/api/js? key=AIzaSyCehuQru9euJOGTDHCviSNuflvp2nSo- s4&callback=showMap"></script>
+
+  <script language="Javascript">
+    function showMap()
+    {
+	     let location = new google.maps.LatLng(51.675491, -3.218804);
+	     let canvas = document.getElementById("googleMap");
+	     let properties = {center:location, zoom:18};
+	     let map = new google.maps.Map(canvas, properties);
+	     let marker = new google.maps.Marker({position:location});
+
+	     marker.setMap(map);
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?
+               key=AIzaSyCehuQru9euJOGTDHCviSNuflvp2nSo-
+               s4&callback=showMap">
+  </script>
 </body>
 
 </html>

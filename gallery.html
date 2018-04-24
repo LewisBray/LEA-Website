@@ -3,83 +3,93 @@
 <html>
 
 <head>
- <title>Little Einsteins Academy - Gallery</title>
- <meta charset="UTF-8">
- <meta name="description" content="Little Einstein's Gallery">
- <meta name="keywords" content="daycare, Blackwood">
- <meta name="author" content="Lewis Bray">
- <link rel="stylesheet" href="littleeinsteinsstylesheet.css">
- <link href="http://fonts.googleapis.com/css?family=Indie+Flower|Crafty+Girls|Handlee" rel="stylesheet"    type="text/css">
+  <title>Little Einsteins Academy - Gallery</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Little Einstein's Gallery" />
+  <meta name="keywords" content="daycare, Blackwood" />
+  <meta name="author" content="Lewis Bray" />
+  <link rel="stylesheet" href="littleeinsteinsstylesheet.css" />
+  <link href="http://fonts.googleapis.com/css?family=Indie+Flower|Crafty+Girls|Handlee"
+        rel="stylesheet" type="text/css" />
 </head>
 
 <body>
- <center>
-  <img src="images/littleeinsteinslogo.png" alt="Little Einstein's Logo"></img>
- </center>
+  <center>
+    <img src="images/littleeinsteinslogo.png" alt="Little Einstein's Logo" />
+  </center>
 
- <div style="margin-left:auto; margin-right:auto; max-width:984px">
-  
-  <a href="homepage.html">
-   <div class="btn", style="margin-left:97px;">
-    <b>Home</b>
-   </div>
-  </a>
+  <div style="margin-left:auto; margin-right:auto; max-width:984px;">
+    <a href="homepage.html">
+      <div class="btn", style="margin-left:97px;">
+        <b>Home</b>
+      </div>
+    </a>
 
-  <a href="facilities.html">
-   <div class="btn", style="margin-left:257px;">
-    <b>Facilities</b>
-   </div>
-  </a>
+    <a href="facilities.html">
+      <div class="btn", style="margin-left:257px;">
+        <b>Facilities</b>
+      </div>
+    </a>
 
-  <div class="vstdbtn", style="margin-left:417px;">
-   <b>Gallery</b>
+    <div class="vstdbtn", style="margin-left:417px;">
+      <b>Gallery</b>
+    </div>
+
+    <a href="location.html">
+      <div class="btn", style="margin-left:577px;">
+        <b>Location</b>
+      </div>
+    </a>
+
+    <a href="contact.html">
+      <div class="btn", style="margin-left:737px;">
+        <b>Contact</b>
+      </div>
+    </a>
   </div>
 
-  <a href="location.html">
-   <div class="btn", style="margin-left:577px;">
-    <b>Location</b>
-   </div>
-  </a>
 
-  <a href="contact.html">
-   <div class="btn", style="margin-left:737px;">
-    <b>Contact</b>
-   </div>
-  </a>
+  <div id="bodystyle">
+    <br /><div class="header">Gallery</div>
 
- </div>
+    <center>
+      <img id="slides" src="images/slideimga.png" style="width:800; height=451;" />
+      <button class="slide" onclick="changeSlide(-1)">Previous</button>
+      <button class="slide" onclick="changeSlide(1)">Next</button>
+    </center>
+  </div>
 
- <div id="bodystyle">
-  <br><div class="header">Gallery</div>
- 
-  <center>
-   <img id="slides" src="images/slideimga.png" style="width:800; height="451;"></img>
-   <button class="slide" onclick="changeSlide(-1)">Previous</button>
-   <button class="slide" onclick="changeSlide(1)">Next</button>
-  </center>
- </div>
 
- <div id="foot">
-  <a href="https://www.facebook.com/einsteinsacademy">
-   <img src="images/fbooklogo.png" alt="Facebook logo."></img>
-  </a>
-  <span style="margin-left:10px;">'Like' us on Facebook to stay up to date with the latest news and offers.</span><br>
-  <span style="margin-left:10px; opacity:0.3;">&copy; 2014 Little Einsteins Academy Ltd.  All rights reserved.</span>
- </div>
+  <div id="foot">
+    <a href="https://www.facebook.com/einsteinsacademy">
+      <img src="images/fbooklogo.png" alt="Facebook logo." />
+    </a>
 
- <script language="Javascript">
-  let slide = 0;
-  let images = ["images/slideimga.png", "images/slideimgb.png", "images/slideimgc.png"];
+    <span style="margin-left:10px;">
+      'Like' us on Facebook to stay up to date with the latest news and offers.
+    </span><br />
 
-  function changeSlide(x)
-  {
-	slide = (slide + x) % images.length;
-	if (slide < 0)
-		slide += images.length;
+    <span style="margin-left:10px; opacity:0.3;">
+      &copy; 2014 Little Einsteins Academy Ltd.  All rights reserved.
+    </span>
+  </div>
 
-	document.getElementById("slides").src = images[slide];
-  }
- </script>
+
+  <script language="Javascript">
+    let slide = 0;
+    let images = ["images/slideimga.png",
+                  "images/slideimgb.png",
+                  "images/slideimgc.png"];
+
+    function changeSlide(x)
+    {
+	     slide = (slide + x) % images.length;
+	     if (slide < 0)
+		     slide += images.length;
+
+	     document.getElementById("slides").src = images[slide];
+    }
+  </script>
 </body>
 
 </html>
