@@ -5,9 +5,10 @@
 <head>
   <title>Little Einsteins Academy - Location</title>
   <meta charset="UTF-8" />
-  <meta name="description" content="Little Einstein's Gallery" />
+  <meta name="description" content="Little Einstein's Location" />
   <meta name="keywords" content="daycare, Blackwood" />
   <meta name="author" content="Lewis Bray" />
+  <link rel="icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="littleeinsteinsstylesheet.css" />
   <link href="http://fonts.googleapis.com/css?family=Indie+Flower|Crafty+Girls|Handlee"
         rel="stylesheet" type="text/css" />
@@ -52,7 +53,7 @@
   <div id="bodystyle">
     <br /><div class="header">Location</div>
 
-    <div id="googleMap"></div>
+    <div id="googlemap"></div>
 
     <ul style="list-style-type:none;">
       <li><br /></li>
@@ -84,7 +85,7 @@
     function showMap()
     {
 	     let location = new google.maps.LatLng(51.675491, -3.218804);
-	     let canvas = document.getElementById("googleMap");
+	     let canvas = document.getElementById("googlemap");
 	     let properties = {center:location, zoom:18};
 	     let map = new google.maps.Map(canvas, properties);
 	     let marker = new google.maps.Marker({position:location});
