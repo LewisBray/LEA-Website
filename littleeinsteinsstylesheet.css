@@ -1,111 +1,76 @@
 body
 {
-	background-color:#ececec;
+	background-color:#ECECEC;
 }
 
-#bodystyle
+a.vstdbtn
 {
-	height:auto;
-	width:860px;
-	background-color:#ffffff;
-	display:block;
-	border-radius:25px;
-	margin-top:100px;
-	margin-left:auto;
-	margin-right:auto;
-	word-wrap:break-word;
+	height:58px;
+	width:150px;
+	color:#EC008C;
+	text-decoration:underline;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	border-color:#EC008C;
+	font-size:30px;
+	font-family:"Indie Flower", cursive;
+	margin-top:15px;
+	margin-right:10px;
+	padding-top:20px;
+	text-align:center;
+	display:inline-block;
+	box-shadow:0px 0px 0px 4px #EC008C inset;
 }
 
-#bodystyle p
+a.btn
 {
-	color:#221f1f;
-	font-size:22px;
-	font-family:'Handlee', cursive;
-	margin-top:0;
-	margin-left:40px;
+	color:#00AEEF;
+	height:58px;
+	width:150px;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	font-size:30px;
+	font-family:"Indie Flower", cursive;
+	margin-top:15px;
+	margin-right:10px;
+	padding-top:20px;
+	text-align:center;
+	display:inline-block;
 }
 
-#bodystyle ul
+a.btn:hover
 {
-	color:#221f1f;
-	font-family:'Handlee', cursive;
-	font-size:22px;
+	box-shadow:0px 0px 0px 4px #EC008C inset;
+	text-decoration:underline;
 }
 
-span.important
+a.email
 {
-	color:#00aeef;
-	font-weight:bold;
+	font-size:16px;
+	font-family:Verdana, Geneva, sans-serif;
+	text-decoration:none;
+	color:#221F1F;
 }
 
 div.header
 {
-	color:#79288c;
+	color:#79288C;
 	font-size: 40px;
 	font-weight:bold;
-	font-family:'Crafty Girls', cursive;
+	font-family:"Crafty Girls", cursive;
 	margin-top:20px;
 	margin-bottom:20px;
 	margin-left:40px;
-}
-
-div.vstdbtn
-{
-	color:#00aeef;
-	height:58px;
-	width:150px;
-	color:#ec008c;
-	text-decoration:underline;
-	background-color:#ffffff;
-	border-radius:10px;
-	position:absolute;
-	font-size:30px;
-	font-family:'Indie Flower', cursive;
-	margin-top:15px;
-	padding-top:20px;
-	text-align:center;
-	box-shadow:0px 0px 0px 6px #ec008c inset;
-}
-
-div.vstdbtn a
-{
-	text-decoration:none;
-}
-
-div.btn
-{
-	color:#00aeef;
-	height:58px;
-	width:150px;
-	background-color:#ffffff;
-	border-radius:10px;
-	position:absolute;
-	font-size:30px;
-	font-family:'Indie Flower', cursive;
-	margin-top:15px;
-	padding-top:20px;
-	text-align:center;
-}
-
-div.btn a
-{
-	text-decoration:none;
-}
-
-div.btn:hover
-{
-	box-shadow:0px 0px 0px 4px #ec008c inset;
-	text-decoration:underline;
 }
 
 button.slide
 {
 	height:60px;
 	width:200px;
-	background-color:#00aeef;
-	color:#ffffff;
+	background-color:#00AEEF;
+	color:#FFFFFF;
 	font-size:40px;
-	font-family:'Indie Flower', cursive;
+	font-family:"Indie Flower", cursive;
 	margin-top:5px;
 	margin-bottom:15px;
 	margin-left:5px;
@@ -114,12 +79,47 @@ button.slide
 	outline:none;
 }
 
+#bodystyle
+{
+	height:auto;
+	width:860px;
+	background-color:#FFFFFF;
+	display:block;
+	border-radius:25px;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	word-wrap:break-word;
+}
+
+#bodystyle p
+{
+	color:#221F1F;
+	font-size:22px;
+	font-family:Handlee, cursive;
+	margin-top:0;
+	margin-left:40px;
+}
+
+#bodystyle ul
+{
+	color:#221F1F;
+	font-family:Handlee, cursive;
+	font-size:22px;
+}
+
+#bodystyle span
+{
+	color:#00AEEF;
+	font-weight:bold;
+}
+
 #foot
 {
 	height:auto;
 	width:800px;
 	font-size:18px;
-	font-family:'Handlee', cursive;
+	font-family:Handlee, cursive;
 	margin-top:5px;
 	margin-bottom:5px;
 	margin-left:auto;
@@ -140,7 +140,7 @@ button.slide
 
 #googlemap
 {
-	color:#ffffff;
+	color:#FFFFFF;
 	width:450px;
 	height:200px;
 	margin-right:40px;
