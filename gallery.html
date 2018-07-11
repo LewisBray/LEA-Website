@@ -40,31 +40,37 @@
       </nav>
     </center>
 
-    <div id="bodystyle">
-      <br /><div class="header">Gallery</div>
+    <div id="main">
+      <h1>
+        Gallery
+      </h1>
 
       <center>
-        <img id="slides" src="images/slideimga.png" style="width:800; height=451;" />
-        <button class="slide" onclick="changeSlide(-1)">Previous</button>
-        <button class="slide" onclick="changeSlide(1)">Next</button>
+        <img id="slides" src="images/slideimga.png" />
+
+        <button class="slide" onclick="changeSlide(-1)">
+          Previous
+        </button>
+
+        <button class="slide" onclick="changeSlide(1)">
+          Next
+        </button>
       </center>
     </div>
 
-
-    <div id="foot">
+    <footer>
       <a href="https://www.facebook.com/einsteinsacademy">
         <img src="images/fbooklogo.png" alt="Facebook logo." />
       </a>
 
-      <span style="margin-left:10px;">
+      <div>
         'Like' us on Facebook to stay up to date with the latest news and offers.
-      </span><br />
+      </div>
 
-      <span style="margin-left:10px; opacity:0.3;">
+      <div>
         &copy; 2014 Little Einsteins Academy Ltd.  All rights reserved.
-      </span>
-    </div>
-
+      </div>
+    </footer>
 
     <script language="Javascript">
       let slide = 0;
